@@ -1,0 +1,96 @@
+<!-- <form [formGroup]="formGroup"> -->
+    <div class="container">
+    <br>
+    <h2 style="text-align: center">Current Weather For Pune</h2>
+    <!-- <div class="inline-row">
+            <label id="radio-group-label">Show More information</label>
+            &nbsp;
+            <mat-radio-group formControlName="moreInfo" (change)="toggle()" aria-labelledby="radio-group-label"
+              class="radio-group">
+              <mat-radio-button class="radio-button" value="1">
+                Yes
+              </mat-radio-button>
+              <mat-radio-button checked class="radio-button" value="0">
+                No
+              </mat-radio-button>
+            </mat-radio-group>
+          </div> -->
+    <div>
+        <hr>
+        <div class="wrapper">
+
+            <table class="mat-elevation-z8">
+                <ng-container>
+                    <tr>
+                        <td class="sameClr"> Location </td>
+                        <td class="sameClr"> {{cityName}} </td>
+                    </tr>
+
+                </ng-container>
+                <br>
+                <ng-container>
+                    <tr>
+                        <td class="sameClr"> Weather </td>
+                        <td class="sameClr"> {{currentWeatherDescription}} </td>
+                    </tr>
+                </ng-container>
+                <br>
+                <ng-container>
+                    <tr>
+                        <td class="sameClr"> Current Tempreture </td>
+                        <td class="sameClr"> {{currentTemp}} </td>
+                    </tr>
+                </ng-container>
+                <br>
+                <ng-container>
+                    <tr>
+                        <td class="sameClr"> Today's High Tempreture </td>
+                        <td class="sameClr"> {{todaysHighTemp}} </td>
+                    </tr>
+                </ng-container>
+                <br>
+                <ng-container>
+                    <tr>
+                        <td class="sameClr"> Wind Speed </td>
+                        <td class="sameClr"> {{windSpeed}} </td>
+                    </tr>
+                </ng-container>
+                <br>
+                <ng-container>
+                    <tr>
+                        <td class="sameClr"> Humidity</td>
+                        <td class="sameClr"> {{humidity}} </td>
+                    </tr>
+                </ng-container>
+                <br>
+                <ng-container>
+                    <tr>
+                        <td class="sameClr"> Pressure </td>
+                        <td class="sameClr"> {{pressure}} </td>
+                    </tr>
+                </ng-container>
+                <br>
+                <ng-container>
+                    <tr>
+                        <td class="sameClr"> Sunsrise Time </td>
+                        <td class="sameClr"> {{sunrise | date:'shortTime'}} </td>
+                    </tr>
+                </ng-container>
+
+                <br>
+
+                <ng-container>
+                    <tr>
+                        <td class="sameClr"> Sunset Time </td>
+                        <td class="sameClr"> {{sunset | date:'shortTime'}} </td>
+                    </tr>
+                </ng-container>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <button class="mr-2 mb-1" mat-raised-button color="primary" (click)="weeklyWeatherReport()"> More Description of
+            Weather</button>
+    </div>
+</div>
